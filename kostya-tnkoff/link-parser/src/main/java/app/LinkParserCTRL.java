@@ -1,9 +1,9 @@
 package app;
 
-import backend.BackendLinkParser;
+import backend.BackLinkParser;
 import org.springframework.web.bind.annotation.*;
 @RestController
-public class LinkParserController {
+public class LinkParserCTRL {
     @GetMapping("/")
     @ResponseBody
     String hello() {
@@ -13,7 +13,7 @@ public class LinkParserController {
     @GetMapping("/url:")
     @ResponseBody
     public String getUrl(@RequestParam(required = false) String url) {
-        BackendLinkParser linkParser = new BackendLinkParser(url);
+        BackLinkParser linkParser = new BackLinkParser(url);
         return "<html><p>URL: " + url + "</p><p>Data:"+linkParser.getData()+"</p></html>";
     }
 

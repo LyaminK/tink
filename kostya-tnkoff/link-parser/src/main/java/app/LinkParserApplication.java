@@ -6,11 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 
 @SpringBootApplication
-@EnableConfigurationProperties(AppConfigRecord.class)
-public class LinkParserApp {
+@EnableConfigurationProperties(ApplicationConfigRecord.class)
+public class LinkParserApplication {
     public static void main(String[] args) {
-        var ctx = SpringApplication.run(LinkParserApp.class, args);
-        AppConfigRecord config = ctx.getBean(AppConfigRecord.class);
+        var ctx = SpringApplication.run(LinkParserApplication.class, args);
+        ApplicationConfigRecord config = ctx.getBean(ApplicationConfigRecord.class);
         System.out.println(config);
     }
 }
