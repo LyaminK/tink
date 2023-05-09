@@ -1,4 +1,4 @@
-package ru.tinkoff.edu.java.bot.DTO;
-import java.net.URI;
+package ru.tinkoff.edu.java.bot.dto;
+
 public record RemoveLinkRequest(String link) {
 }

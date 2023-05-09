@@ -1,8 +1,6 @@
-package ru.tinkoff.edu.java.bot.DTO;
-
-import ru.tinkoff.edu.java.bot.Model.Link;
+package ru.tinkoff.edu.java.bot.dto;
 
 import java.util.List;
-public record ListLinkResponse(List<Link> links, int size) {
 
+public record ListLinkResponse(List<Link> links, int size) {
 }
